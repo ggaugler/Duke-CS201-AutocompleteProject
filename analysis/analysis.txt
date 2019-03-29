@@ -9,7 +9,7 @@ String fname = "data/threeletterwords.txt";
 (paste here)
 
 
-		fname = "data/words-333333.txt";
+		fname = "data/fourletterwords.txt";
 		
 			
 (paste here)
