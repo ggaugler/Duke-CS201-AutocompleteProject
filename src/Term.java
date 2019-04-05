@@ -30,7 +30,10 @@ public class Term implements Comparable<Term> {
 	 */
 	public Term(String word, double weight) {
 		// TODO: Complete Term constructor, throw exceptions
-	
+		if (word == null)
+			throw new NullPointerException();
+		if (weight < 0)
+			throw new IllegalArgumentException("negative weight "+weight);
 		myWord = word;
 		myWeight = weight;
 	}
@@ -102,10 +105,16 @@ public class Term implements Comparable<Term> {
 		 */
 		public int compare(Term v, Term w) {
 			// TODO: Implement compare
-			
+			if (myPrefixSize <= v.getWord().length() && myPrefixSize <= w.getWord().length())//if v and w are longer than the prefix, runs compareTo on the characters in each term that are in the prefix
+				return v.getWord().substring(0,myPrefixSize).compareTo(w.getWord().substring(0, myPrefixSize)); 
+			if (myPrefixSize > v.getWord().length() && myPrefixSize > w.getWord().length()) //if v and w are shorter than the prefix, compares v and w as a whole
+				return v.getWord().compareTo(w.getWord());
+			if (myPrefixSize <= v.getWord().length() && myPrefixSize > w.getWord().length())
+				return v.getWord().substring(0, myPrefixSize).compareTo(w.getWord()); 
+			if (myPrefixSize > v.getWord().length() && myPrefixSize <= w.getWord().length())
+				return v.getWord().compareTo(w.getWord().substring(0, myPrefixSize));
 			return 0;
-		}
-	
+		}	
 	}
 
 	/**
@@ -115,10 +124,7 @@ public class Term implements Comparable<Term> {
 	 */
 	public static class ReverseWeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
-			// TODO: Implement compare
-			
-			
-			return 0;
+			return (int)(w.getWeight() - v.getWeight());
 		}
 	}
 
@@ -129,9 +135,7 @@ public class Term implements Comparable<Term> {
 	 */
 	public static class WeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
-			//TODO: Implement compare
-			
-			return 0;
+			return (int)(v.getWeight() - w.getWeight());
 		}
 	}
 }

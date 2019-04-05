@@ -34,8 +34,7 @@ public class BinarySearchAutocomplete implements Autocompletor {
 	public BinarySearchAutocomplete(String[] terms, double[] weights) {
 		if (terms == null || weights == null) {
 			throw new NullPointerException("One or more arguments null");
-		}
-		
+		}		
 		initialize(terms,weights);
 	}
 
@@ -101,12 +100,22 @@ public class BinarySearchAutocomplete implements Autocompletor {
 	
 	@Override
 	public List<Term> topMatches(String prefix, int k) {
-		Term dummy = new Term(prefix,0);
-		Term.PrefixOrder comp = new Term.PrefixOrder(prefix.length());
-		int first = firstIndexOf(myTerms, dummy, comp);
-		int last = lastIndexOf(myTerms, dummy, comp);
-		return new ArrayList<>();
-	
+		if (k < 0) 
+			throw new IllegalArgumentException("Illegal value of k: " + k);
+		int first = firstIndexOf(myTerms, new Term(prefix,0), new Term.PrefixOrder(prefix.length()));
+		int last = lastIndexOf(myTerms, new Term(prefix,0), new Term.PrefixOrder(prefix.length()));
+		if (first < 0 || last < 0)
+			return new ArrayList<Term>();
+		
+		PriorityQueue<Term> pq = new PriorityQueue<Term>(new Term.ReverseWeightOrder());
+		for (int i = first; i <= last; i += 1)
+			pq.add(myTerms[i]);
+
+		ArrayList<Term> res = new ArrayList<Term>();
+		int maxloop = Math.min(k, pq.size());
+		for (int i = 0; i < maxloop; i += 1)
+			res.add(pq.remove());
+		return res;
 	}
 
 	@Override
