@@ -124,18 +124,21 @@ public class Term implements Comparable<Term> {
 	 */
 	public static class ReverseWeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
-			return Double.compare(w.getWeight(), v.getWeight());
+			// TODO: Implement compare
+			
+			
+
+			return (int)(w.getWeight() - v.getWeight());
 		}
 	}
 
-	/**
-	 * A Comparator for comparing Terms using only their weights, in ascending
-	 * order. This comparator required for assignment.
-	 *
-	 */
+
 	public static class WeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
-			return Double.compare(v.getWeight(), w.getWeight());
+			//TODO: Implement compare
+			
+			return (int)(v.getWeight() - w.getWeight());
 		}
 	}
+
 }

@@ -74,7 +74,7 @@ public class BruteAutocomplete implements Autocompletor {
 			throw new IllegalArgumentException("Duplicate input terms");
 		}
 	}
-	
+
 	@Override
 	public int sizeInBytes() {
 		if (mySize == 0) {
