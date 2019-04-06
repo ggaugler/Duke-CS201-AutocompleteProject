@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//**MAKE SURE YOU JAVADOC SO YOU DON'T LOSE POINTS!!!
 public class HashListAutocomplete implements Autocompletor 
 {
 	private static final int MAX_PREFIX = 10;

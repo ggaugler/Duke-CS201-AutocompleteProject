@@ -1,5 +1,5 @@
-Your name
-Your netid
+Geoff Gaugler
+gg102
 
 Copy paste results from running benchmark
 for each of three files (see code)
