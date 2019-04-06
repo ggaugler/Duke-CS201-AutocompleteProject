@@ -6,8 +6,43 @@ for each of three files (see code)
 
 String fname = "data/threeletterwords.txt"; 
 
-(paste here)
-
+init time: 0.007138	for BruteAutocomplete
+init time: 0.002979	for BinarySearchAutocomplete
+init time: 0.04417	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	17576	50	0.00332476	0.01385464	0.00022307
+BruteAutocomplete and BinarySearchAutocomplete differ
+8	(999369.0,srr)	(999368.8,ymh)
+9	(999368.8,ymh)	(999369.0,srr)
+BinarySearchAutocomplete and HashListAutocomplete differ
+8	(999368.8,ymh)	(999369.0,srr)
+9	(999369.0,srr)	(999368.8,ymh)
+	17576	50	0.00104719	0.00389010	0.00001484
+BruteAutocomplete and BinarySearchAutocomplete differ
+8	(999369.0,srr)	(999368.8,ymh)
+9	(999368.8,ymh)	(999369.0,srr)
+BinarySearchAutocomplete and HashListAutocomplete differ
+8	(999368.8,ymh)	(999369.0,srr)
+9	(999369.0,srr)	(999368.8,ymh)
+a	676	50	0.00038910	0.00010899	0.00000696
+a	676	50	0.00034783	0.00006910	0.00000557
+b	676	50	0.00028197	0.00006354	0.00000510
+c	676	50	0.00028615	0.00005844	0.00000510
+g	676	50	0.00026667	0.00005612	0.00000510
+ga	26	50	0.00025925	0.00003293	0.00000510
+go	26	50	0.00024255	0.00003200	0.00000464
+gu	26	50	0.00025136	0.00003339	0.00000557
+x	676	50	0.00028383	0.00005612	0.00000557
+y	676	50	0.00028058	0.00006354	0.00000603
+z	676	50	0.00015444	0.00006632	0.00000464
+aa	26	50	0.00014145	0.00003571	0.00000510
+az	26	50	0.00012707	0.00004313	0.00000417
+za	26	50	0.00012754	0.00003061	0.00000464
+zz	26	50	0.00011733	0.00002504	0.00000417
+zqzqwwx	0	50	0.00024209	0.00002458	0.00000278
+size in bytes=246064	 for BruteAutocomplete
+size in bytes=246064	 for BinarySearchAutocomplete
+size in bytes=1092468	 for HashListAutocomplete
 
 		fname = "data/fourletterwords.txt";
 		

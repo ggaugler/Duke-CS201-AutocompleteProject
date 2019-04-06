@@ -127,8 +127,8 @@ public class Term implements Comparable<Term> {
 			// TODO: Implement compare
 			
 			
-
-			return (int)(w.getWeight() - v.getWeight());
+			double x = w.getWeight() - v.getWeight();	
+			return (int)x;
 		}
 	}
 
@@ -136,8 +136,8 @@ public class Term implements Comparable<Term> {
 	public static class WeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
 			//TODO: Implement compare
-			
-			return (int)(v.getWeight() - w.getWeight());
+			double x = v.getWeight() - w.getWeight();
+			return (int)x;
 		}
 	}
 
