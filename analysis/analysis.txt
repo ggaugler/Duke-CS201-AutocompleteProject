@@ -202,8 +202,7 @@ size in bytes=475893648	 for HashListAutocomplete
 Explain results: does number of matches have an effect
 on the runtime?	
 
-Yes, but not by much, which can be traced to the runtime complexity (O(log N + M log M)). 
-There isn't much of a difference between log(50)= 1.699, and log(1000) = 3.
+Yes
 
 --------------------------------
 
