@@ -125,19 +125,20 @@ public class Term implements Comparable<Term> {
 	public static class ReverseWeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
 			// TODO: Implement compare
-			
-			
-			double x = w.getWeight() - v.getWeight();	
-			return (int)x;
+			double x = w.getWeight() - v.getWeight();
+			if (x>0) return 1;
+			if (x<0) return -1;
+			return 0;
 		}
 	}
-
 
 	public static class WeightOrder implements Comparator<Term> {
 		public int compare(Term v, Term w) {
 			//TODO: Implement compare
 			double x = v.getWeight() - w.getWeight();
-			return (int)x;
+			if (x>0) return 1;
+			if (x<0) return -1;
+			return 0;
 		}
 	}
 

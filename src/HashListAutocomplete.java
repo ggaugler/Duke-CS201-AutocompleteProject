@@ -11,12 +11,28 @@ public class HashListAutocomplete implements Autocompletor
 	private Map<String, List<Term>> myMap;
 	private int mySize;
 
+	/**
+	 * Throws nullpointerexception if either the terms or weights are null.
+	 * @param terms
+	 * @param weights
+	 */
 	public HashListAutocomplete(String[] terms, double[] weights) 
 	{
 		if (terms == null || weights == null)
 			throw new NullPointerException("One or more arguments null");
 		initialize(terms, weights);
 	}
+	
+	/**
+	 * Implements the Autocompletor interface, quicker implementation of 
+	 * topMatches by utilizing a hashlist. Maintains a hashlist containing
+	 * every possible prefix up to 10 characters, the key being the prefix and 
+	 * the value being a weight sorted list of Term objects with that prefix.
+	 * Returns the k words in myTerms with the largest weight which match the given prefix,
+	 * in descending weight order. If less than k words exist matching the given
+	 * prefix (including if no words exist), then the array instead contains all
+	 * those words.
+	 */
 	@Override
 	public List<Term> topMatches(String prefix, int k) 
 	{
@@ -33,6 +49,11 @@ public class HashListAutocomplete implements Autocompletor
 		List<Term> b = a.subList(0, Math.min(k, a.size()));
 		return b;
 	}
+	
+	/**
+	 * Creates internal state needed to store Term objects
+	 * from the parameters. 
+	 */
 	@Override
 	public void initialize(String[] terms, double[] weights) 
 	{
@@ -55,6 +76,11 @@ public class HashListAutocomplete implements Autocompletor
 			Collections.sort(myMap.get(key), a);
 		}
 	}
+	
+	/**
+	 * Returns size in bytes of all Strings and doubles
+	 * stored in implementing class.
+	 */
 	@Override
 	public int sizeInBytes() 
 	{

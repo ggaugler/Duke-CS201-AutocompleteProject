@@ -46,23 +46,164 @@ size in bytes=1092468	 for HashListAutocomplete
 
 		fname = "data/fourletterwords.txt";
 		
-			
-(paste here)
+init time: 0.04940	for BruteAutocomplete
+init time: 0.01857	for BinarySearchAutocomplete
+init time: 0.9143	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	456976	50	0.01130112	0.05474515	0.00021009
+BruteAutocomplete and BinarySearchAutocomplete differ
+0	(999998.9,wuzi)	(999998.8,iljs)
+2	(999998.8,iljs)	(999998.9,wuzi)
+3	(999994.7,xxlx)	(999994.2,qwki)
+4	(999994.2,qwki)	(999994.7,xxlx)
+9	(999982.3,poxs)	(999982.4,icey)
+10	(999982.4,icey)	(999982.3,poxs)
+11	(999979.8,qsin)	(999980.3,fvky)
+12	(999980.3,fvky)	(999979.8,qsin)
+20	(999952.4,zjqf)	(999952.5,hoxs)
+21	(999952.5,hoxs)	(999952.4,zjqf)
+30	(999933.3,ybhx)	(999932.5,aklm)
+31	(999932.5,aklm)	(999933.3,ybhx)
+35	(999924.6,svik)	(999923.8,rwln)
+36	(999925.2,urqe)	(999924.6,svik)
+37	(999923.8,rwln)	(999925.2,urqe)
+39	(999920.4,kusj)	(999919.7,rmvc)
+40	(999919.7,rmvc)	(999920.4,kusj)
+42	(999914.9,odbh)	(999915.0,vnkz)
+43	(999915.0,vnkz)	(999914.9,odbh)
+BinarySearchAutocomplete and HashListAutocomplete differ
+39	(999919.7,rmvc)	(999920.4,kusj)
+40	(999920.4,kusj)	(999919.7,rmvc)
+42	(999915.0,vnkz)	(999914.9,odbh)
+43	(999914.9,odbh)	(999915.0,vnkz)
+	456976	50	0.00660964	0.01753928	0.00000835
+BruteAutocomplete and BinarySearchAutocomplete differ
+0	(999998.9,wuzi)	(999998.8,iljs)
+2	(999998.8,iljs)	(999998.9,wuzi)
+3	(999994.7,xxlx)	(999994.2,qwki)
+4	(999994.2,qwki)	(999994.7,xxlx)
+9	(999982.3,poxs)	(999982.4,icey)
+10	(999982.4,icey)	(999982.3,poxs)
+11	(999979.8,qsin)	(999980.3,fvky)
+12	(999980.3,fvky)	(999979.8,qsin)
+20	(999952.4,zjqf)	(999952.5,hoxs)
+21	(999952.5,hoxs)	(999952.4,zjqf)
+30	(999933.3,ybhx)	(999932.5,aklm)
+31	(999932.5,aklm)	(999933.3,ybhx)
+35	(999924.6,svik)	(999923.8,rwln)
+36	(999925.2,urqe)	(999924.6,svik)
+37	(999923.8,rwln)	(999925.2,urqe)
+39	(999920.4,kusj)	(999919.7,rmvc)
+40	(999919.7,rmvc)	(999920.4,kusj)
+42	(999914.9,odbh)	(999915.0,vnkz)
+43	(999915.0,vnkz)	(999914.9,odbh)
+BinarySearchAutocomplete and HashListAutocomplete differ
+39	(999919.7,rmvc)	(999920.4,kusj)
+40	(999920.4,kusj)	(999919.7,rmvc)
+42	(999915.0,vnkz)	(999914.9,odbh)
+43	(999914.9,odbh)	(999915.0,vnkz)
+a	17576	50	0.00622007	0.00056997	0.00002597
+BruteAutocomplete and BinarySearchAutocomplete differ
+16	(999197.3,apyi)	(999197.5,aplz)
+17	(999197.5,aplz)	(999197.3,apyi)
+a	17576	50	0.00561114	0.00056904	0.00000603
+BruteAutocomplete and BinarySearchAutocomplete differ
+16	(999197.3,apyi)	(999197.5,aplz)
+17	(999197.5,aplz)	(999197.3,apyi)
+b	17576	50	0.00530181	0.00055977	0.00000557
+c	17576	50	0.00532639	0.00060893	0.00000881
+BruteAutocomplete and BinarySearchAutocomplete differ
+5	(999833.2,cjjt)	(999833.2,cnvf)
+6	(999833.2,cnvf)	(999833.2,cjjt)
+19	(999462.1,cjiy)	(999461.1,cebs)
+20	(999461.1,cebs)	(999462.1,cjiy)
+BinarySearchAutocomplete and HashListAutocomplete differ
+5	(999833.2,cnvf)	(999833.2,cjjt)
+6	(999833.2,cjjt)	(999833.2,cnvf)
+g	17576	50	0.00591027	0.00061960	0.00000696
+ga	676	50	0.00603085	0.00006957	0.00000557
+go	676	50	0.00577392	0.00004916	0.00000557
+gu	676	50	0.00614911	0.00005797	0.00000603
+x	17576	50	0.00584906	0.00059223	0.00000649
+y	17576	50	0.00549334	0.00061357	0.00001067
+z	17576	50	0.00576511	0.00057647	0.00000603
+BruteAutocomplete and BinarySearchAutocomplete differ
+14	(998885.3,zplt)	(998886.3,znmc)
+15	(998886.3,znmc)	(998885.3,zplt)
+aa	676	50	0.00725798	0.00005751	0.00000788
+az	676	50	0.00581984	0.00004731	0.00000603
+za	676	50	0.00576929	0.00004174	0.00000603
+zz	676	50	0.00586900	0.00004359	0.00000557
+zqzqwwx	0	50	0.00529207	0.00004313	0.00000278
+size in bytes=7311616	 for BruteAutocomplete
+size in bytes=7311616	 for BinarySearchAutocomplete
+size in bytes=40322100	 for HashListAutocomplete
 
 
 		fname = "data/alexa.txt";
 		
-(paste here)
+init time: 0.2883	for BruteAutocomplete
+init time: 1.191	for BinarySearchAutocomplete
+init time: 6.144	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	1000000	50	0.03157803	0.06541786	0.00024904
+	1000000	50	0.02083714	0.03556227	0.00000788
+a	69464	50	0.01796780	0.00192371	0.00000603
+a	69464	50	0.01618507	0.00189728	0.00000603
+b	56037	50	0.01779203	0.00153554	0.00000649
+c	65842	50	0.01823076	0.00184673	0.00000696
+g	37792	50	0.01778925	0.00105554	0.00000603
+ga	6664	50	0.01789592	0.00023049	0.00000649
+go	6953	50	0.01808977	0.00022168	0.00000603
+gu	2782	50	0.01613823	0.00011641	0.00000510
+x	6717	50	0.01763528	0.00022632	0.00000603
+y	16765	50	0.01791864	0.00048325	0.00001020
+z	8780	50	0.01892595	0.00027594	0.00000696
+aa	718	50	0.01690067	0.00004870	0.00000557
+az	889	50	0.01627041	0.00005241	0.00000557
+za	1718	50	0.01758426	0.00007699	0.00000603
+zz	162	50	0.01750774	0.00003200	0.00000603
+zqzqwwx	0	50	0.01573383	0.00004684	0.00000232
+size in bytes=38204230	 for BruteAutocomplete
+size in bytes=38204230	 for BinarySearchAutocomplete
+size in bytes=475893648	 for HashListAutocomplete
 		
 --------------------------------
 
 Paste results for # matches = 10000 with alexa.txt
 
-(paste here)
+init time: 0.2305	for BruteAutocomplete
+init time: 1.095	for BinarySearchAutocomplete
+init time: 5.748	for HashListAutocomplete
+search	size	#match	BruteAutoc	BinarySear	HashListAu
+	1000000	100	0.02720933	0.10935626	0.00024023
+	1000000	100	0.01450901	0.06472731	0.00000835
+a	69464	100	0.01305278	0.00334517	0.00000696
+a	69464	100	0.01305649	0.00336604	0.00000649
+b	56037	100	0.01427435	0.00328998	0.00000881
+c	65842	100	0.01807354	0.00338088	0.00000742
+g	37792	100	0.01232744	0.00226412	0.00000696
+ga	6664	100	0.01268779	0.00039931	0.00000557
+go	6953	100	0.01271979	0.00042806	0.00000557
+gu	2782	100	0.01260802	0.00019107	0.00000510
+x	6717	100	0.01238124	0.00040116	0.00000603
+y	16765	100	0.01246286	0.00084638	0.00001067
+z	8780	100	0.01240675	0.00049391	0.00000603
+aa	718	100	0.01312188	0.00007652	0.00000464
+az	889	100	0.01288257	0.00008580	0.00000557
+za	1718	100	0.01262286	0.00012846	0.00000557
+zz	162	100	0.01259179	0.00004220	0.00002458
+zqzqwwx	0	100	0.01246147	0.00005101	0.00000325
+size in bytes=38204230	 for BruteAutocomplete
+size in bytes=38204230	 for BinarySearchAutocomplete
+size in bytes=475893648	 for HashListAutocomplete
+
 
 Explain results: does number of matches have an effect
 on the runtime?	
 
+Yes, but not by much, which can be traced to the runtime complexity (O(log N + M log M)). 
+There isn't much of a difference between log(50)= 1.699, and log(1000) = 3.
 
 --------------------------------
 
@@ -70,7 +211,19 @@ Explain why the last for loop in BruteAutocomplete.topMatches uses a LinkedList
 (and not an ArrayList) AND why the PriorityQueue uses Term.WeightOrder to get 
 the top k heaviest matches -- rather than using Term.ReverseWeightOrder.
 
+The priority queue is sorted by WeightOrder which is in order from least to greatest.
+So what we need to do is take the first item in the priority queue and add it to the beginning of the list which 
+shifts the list's nodes by 1 each time. This is an O(1) operation for linked lists, but for arraylists this is far 
+more inefficient as they are O(n) for insertion.
+
+Weight order allows the term with the smallest weight to be accessed
+whereas reverseweightorder does not.
+
+
+
 --------------------------------
 
 Explain why HashListAutocomplete uses more memory than the 
 other Autocomplete implementations. Be brief.
+
+
